@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceTrackAssessment", "RaceTrackAssessment.csproj", "{D9C877D2-8B1B-45F4-9C40-7C28ED5496B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceTrackAssessment.Tests", "..\RaceTrackAssessment.Tests\RaceTrackAssessment.Tests.csproj", "{08384C02-6428-4F0D-AB24-C56AD1E0BF79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9C877D2-8B1B-45F4-9C40-7C28ED5496B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9C877D2-8B1B-45F4-9C40-7C28ED5496B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9C877D2-8B1B-45F4-9C40-7C28ED5496B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9C877D2-8B1B-45F4-9C40-7C28ED5496B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08384C02-6428-4F0D-AB24-C56AD1E0BF79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08384C02-6428-4F0D-AB24-C56AD1E0BF79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08384C02-6428-4F0D-AB24-C56AD1E0BF79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08384C02-6428-4F0D-AB24-C56AD1E0BF79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D13F13C6-0325-460D-9243-7249E9C2C9FB}
+	EndGlobalSection
+EndGlobal
