@@ -1,0 +1,95 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/AjaxScript/Car.js"></script>
+
+    <title>Index</title>
+</head>
+<body>
+ 
+    <div class="container">
+        <h2>On Track Cars</h2>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="clearTextBox();">Add Car on Track</button><br /><br />
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        Car ID
+                    </th>
+                    <th>
+                        Car Name
+                    </th>
+                    <th>
+                        Car Model
+                    </th>
+                    <th>
+                        Tow Strap
+                    </th>
+                    <th>
+                        Groun Height
+                    </th>
+                    <th>
+                       Tire Wear
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+            </tbody>
+        </table>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title" id="myModalLabel">Add Car</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="CarId">ID</label>
+                            <input type="text" class="form-control" id="CarId" placeholder="Car Id" disabled="disabled" />
+                        </div>
+                        <div class="form-group">
+                            <label for="CarName">Car Name</label>
+                            <input type="text" class="form-control" id="CarName" placeholder="Car Name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="CarModel">Car Model</label>
+                            <input type="text" class="form-control" id="CarModel" placeholder="Car Model" />
+                        </div>
+                        <div class="form-group">
+                            <label for="TowStrap">Tow Strap</label>
+                            <input type="text" class="form-control" id="TowStrap" placeholder="On Track" />
+                        </div>
+                        <div class="form-group">
+                            <label for="GHeight">Ground Height</label>
+                            <input type="text" class="form-control" id="GHeight" placeholder="On Track" />
+                        </div>
+                        <div class="form-group">
+                            <label for="TireWear">Tire Wear</label>
+                            <input type="text" class="form-control" id="TireWear" placeholder="On Track" />
+                        </div>
+                    
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btnAdd" onclick="return Add();">Add</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
