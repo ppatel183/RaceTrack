@@ -122,5 +122,5 @@ function validate() {
 }  
 //Load Data in Table when documents is ready  
 $(document).ready(function () {
-    setInterval(function () { loadData(); }, 3000);
+    setInterval(function () { loadData(); }, 1000);
 });

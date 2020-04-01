@@ -1,0 +1,49 @@
+Inheritance:
+ => Inheritance is an important pillar of Object-Oriented Programming. It is the mechanism in OOP by which one class is allowed to inherit the features (fields and methods) of another class. Classes and objects created through inheritance are tightly coupled because changing the parent or superclass in an inheritance relationship risks breaking your code. 
+
+ => When to use inheritance in OOPS
+In object-oriented programming, we can use inheritance when we know there is an "is a" relationship between a child and its parent class. Some examples would be:
+    • A orange is a fruit.
+    • A Linux is an Operating System.
+    • A car is a vehicle.
+
+In each case, the child or subclass is a specialized version of the parent or superclass. Inheriting from the superclass is an example of code reuse. To better understand this relationship, take a moment to study the Car class, which inherits from Vehicle:
+class Vehicle {
+
+    String brand;
+
+    void move () {
+        Console.Write("The vehicle is moving").
+    }
+}
+
+public class Car extends Vehicle {
+    String owner;
+
+    Public void move(){}
+    public void print () {
+        
+    }
+}
+
+Composition:
+=> Composition is one of the fundamental concepts in object-oriented programming. In composition, Classes and objects are created as loosely coupled, meaning that you can more easily change the component parts without breaking your code.
+=> When to use composition in OOPS
+In object-oriented programming, we can use composition in cases where one object "has" (or is part of) another object. Some examples would be:
+   • A car has a battery (a battery is part of a car).
+   • A school has a library (a library is part of a school).
+   • A house has a living room (a living room is part of a house).
+
+To better understand this type of relationship, consider the composition of a House:
+
+public class LivingRoom 
+{
+…….
+}
+public class House 
+{  
+    LinvingRoom e = new LivingRoom();  
+   ....... 
+}  
+
+
