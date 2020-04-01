@@ -12,3 +12,6 @@ Car Data
  
 #Default Data 
  I am seeding 3 default records  
+ 
+#Composition & Inheritance (Bonus: Explain which is better and why?)
+Please find the attached txt file 
