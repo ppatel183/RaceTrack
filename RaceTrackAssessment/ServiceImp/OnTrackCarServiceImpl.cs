@@ -29,7 +29,6 @@ namespace RaceTrackAssessment.ServiceImp
                 OnTrackCar track = trackDbContext.OnTrackCars.Find(1);
                 car.OnTrackCar = track;
                 trackDbContext.Cars.Add(car);
-                //track.Cars.Add(car);
                 trackDbContext.SaveChanges();
                 rData.IsSuccess = true;
                 rData.Message = "The data has been processed!";
