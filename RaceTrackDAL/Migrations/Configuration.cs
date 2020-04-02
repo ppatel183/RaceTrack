@@ -1,25 +1,23 @@
-﻿namespace RaceTrackAssessment.Migrations
+﻿namespace RaceTrackDAL.Migrations
 {
-    using RaceTrackAssessment.Models;
+    using RaceTrackDAL.Models;
     using System;
     using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<RaceTrackAssessment.DBConfiguration.RaceTrackDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<RaceTrackDAL.DBConfiguration.RaceTrackDbContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(RaceTrackAssessment.DBConfiguration.RaceTrackDbContext context)
+        protected override void Seed(RaceTrackDAL.DBConfiguration.RaceTrackDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method
-            //  to avoid creating duplicate seed data.
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
             List<Car> Cars = new List<Car>();
@@ -40,7 +38,7 @@
 
             context.Cars.AddRange(Cars);
             onTrack.Cars = Cars;
-           
+
             context.SaveChanges();
             base.Seed(context);
         }

@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace RaceTrackAssessment.Models
+namespace RaceTrackDAL.Models
 {
     public class OnTrackCar
     {
@@ -12,6 +13,6 @@ namespace RaceTrackAssessment.Models
         public int TrackID { get; set; }
         public string TrackName { get; set; }
         public List<Car> Cars { get; set; }
-       
+
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace RaceTrackAssessment.Migrations
+﻿namespace RaceTrackDAL.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

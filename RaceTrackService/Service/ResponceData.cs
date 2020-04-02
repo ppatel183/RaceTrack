@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace RaceTrackAssessment.Models
+namespace RaceTrackService.Service
 {
-    /// <summary>
-    ///  this class will be use to send resonce back to front-end
-    /// </summary>
     public class ResponceData
     {
         public bool IsSuccess { get; set; }

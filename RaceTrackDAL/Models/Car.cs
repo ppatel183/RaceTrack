@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace RaceTrackAssessment.Models
+namespace RaceTrackDAL.Models
 {
     public class Car
     {
-       
+
         [Key]
         public int CarId { get; set; }
 
@@ -23,9 +24,6 @@ namespace RaceTrackAssessment.Models
         public int TireWear { get; set; }
         public OnTrackCar OnTrackCar { get; set; }
 
-      
 
     }
-
-
 }

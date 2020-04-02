@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web.Mvc;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RaceTrackAssessment;
-using RaceTrackAssessment.Controllers;
-using RaceTrackAssessment.DBConfiguration;
-using RaceTrackAssessment.Models;
-using RaceTrackAssessment.Service;
-using RaceTrackAssessment.ServiceImp;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using RaceTrackDAL.DBConfiguration;
+using RaceTrackDAL.Models;
+using RaceTrackService.Service;
+using RaceTrackService.ServiceImpl;
 
 namespace RaceTrackAssessment.Tests.Controllers
 {

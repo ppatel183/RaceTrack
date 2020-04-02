@@ -1,13 +1,13 @@
-﻿using RaceTrackAssessment.DBConfiguration;
-using RaceTrackAssessment.Models;
-using RaceTrackAssessment.Service;
+﻿using RaceTrackDAL.DBConfiguration;
+using RaceTrackDAL.Models;
+using RaceTrackService.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.Helpers;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace RaceTrackAssessment.ServiceImp
+namespace RaceTrackService.ServiceImpl
 {
     public class OnTrackCarServiceImpl : IOnTrackCar
     {
@@ -33,7 +33,7 @@ namespace RaceTrackAssessment.ServiceImp
                 rData.IsSuccess = true;
                 rData.Message = "The data has been processed!";
             }
-           
+
             return rData;
         }
         public List<Car> GetOnTrackCars()
@@ -43,7 +43,7 @@ namespace RaceTrackAssessment.ServiceImp
 
         private int TotalCarsOnTrack()
         {
-           return trackDbContext.Cars.Where(x => x.OnTrackCar.TrackID == 1).Count();
+            return trackDbContext.Cars.Where(x => x.OnTrackCar.TrackID == 1).Count();
         }
     }
 }

@@ -10,7 +10,7 @@ function loadData() {
         success: function (result) {
             var html = '';
             console.log("Reached Success", result);
-            $.each(result, function (key, item) {
+            $.each(result.RaceTrackCars, function (key, item) {
                 var flag = item.TowStrap == true ? "Yes" : "No";
                 html += '<tr>';
                 html += '<td>' + item.CarId + '</td>';

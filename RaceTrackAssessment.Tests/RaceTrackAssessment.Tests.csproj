@@ -106,9 +106,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RaceTrackAssessment\RaceTrackAssessment.csproj">
-      <Project>{D9C877D2-8B1B-45F4-9C40-7C28ED5496B8}</Project>
-      <Name>RaceTrackAssessment</Name>
+    <ProjectReference Include="..\RaceTrackDAL\RaceTrackDAL.csproj">
+      <Project>{5db04c6b-43f9-4f75-873c-18864a90c6b1}</Project>
+      <Name>RaceTrackDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RaceTrackService\RaceTrackService.csproj">
+      <Project>{1421d70d-7566-4686-b088-73b0bdde9da6}</Project>
+      <Name>RaceTrackService</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

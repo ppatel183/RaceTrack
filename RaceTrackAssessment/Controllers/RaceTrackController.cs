@@ -1,9 +1,7 @@
-﻿using RaceTrackAssessment.Models;
-using RaceTrackAssessment.Service;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿
+using RaceTrackAssessment.ViewModels;
+using RaceTrackDAL.Models;
+using RaceTrackService.Service;
 using System.Web.Mvc;
 
 namespace RaceTrackAssessment.Controllers
@@ -20,14 +18,16 @@ namespace RaceTrackAssessment.Controllers
         {
             return View();
         }
-        public JsonResult LoadCars()
-        {
-            return Json(_ICar.GetCars(), JsonRequestBehavior.AllowGet);
-        }
+        //public JsonResult LoadCars()
+        //{
+             
+        //    return Json(new RaceTrackCarViewModel(_ICar.GetCars()), JsonRequestBehavior.AllowGet);
+        //}
 
         public JsonResult LoadTracks()
         {
-            return Json(_ITrack.GetOnTrackCars(), JsonRequestBehavior.AllowGet);
+           return Json(new RaceTrackCarViewModel(_ITrack.GetOnTrackCars()), JsonRequestBehavior.AllowGet);
+           // return Json(_ITrack.GetOnTrackCars(), JsonRequestBehavior.AllowGet);
         }
         // GET: RaceTrack/Create
         public ActionResult Create()

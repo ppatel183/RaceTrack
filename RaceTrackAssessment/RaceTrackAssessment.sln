@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceTrackAssessment", "Race
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceTrackAssessment.Tests", "..\RaceTrackAssessment.Tests\RaceTrackAssessment.Tests.csproj", "{08384C02-6428-4F0D-AB24-C56AD1E0BF79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceTrackDAL", "..\RaceTrackDAL\RaceTrackDAL.csproj", "{5DB04C6B-43F9-4F75-873C-18864A90C6B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceTrackService", "..\RaceTrackService\RaceTrackService.csproj", "{1421D70D-7566-4686-B088-73B0BDDE9DA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{08384C02-6428-4F0D-AB24-C56AD1E0BF79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08384C02-6428-4F0D-AB24-C56AD1E0BF79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08384C02-6428-4F0D-AB24-C56AD1E0BF79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DB04C6B-43F9-4F75-873C-18864A90C6B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB04C6B-43F9-4F75-873C-18864A90C6B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB04C6B-43F9-4F75-873C-18864A90C6B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB04C6B-43F9-4F75-873C-18864A90C6B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1421D70D-7566-4686-B088-73B0BDDE9DA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1421D70D-7566-4686-B088-73B0BDDE9DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1421D70D-7566-4686-B088-73B0BDDE9DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1421D70D-7566-4686-B088-73B0BDDE9DA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

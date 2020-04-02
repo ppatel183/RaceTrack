@@ -141,23 +141,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Controllers\RaceTrackController.cs" />
-    <Compile Include="DBConfiguration\RaceTrackDbContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202003302104064_first-migration.cs" />
-    <Compile Include="Migrations\202003302104064_first-migration.designer.cs">
-      <DependentUpon>202003302104064_first-migration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Car.cs" />
-    <Compile Include="Models\OnTrackCar.cs" />
-    <Compile Include="Models\ResponceData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServiceImp\CarServiceImpl.cs" />
-    <Compile Include="ServiceImp\OnTrackCarServiceImpl.cs" />
-    <Compile Include="Service\ICar.cs" />
-    <Compile Include="Service\IOnTrackCar.cs" />
+    <Compile Include="ViewModels\RaceTrackCarViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -212,9 +200,14 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202003302104064_first-migration.resx">
-      <DependentUpon>202003302104064_first-migration.cs</DependentUpon>
-    </EmbeddedResource>
+    <ProjectReference Include="..\RaceTrackDAL\RaceTrackDAL.csproj">
+      <Project>{5db04c6b-43f9-4f75-873c-18864a90c6b1}</Project>
+      <Name>RaceTrackDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RaceTrackService\RaceTrackService.csproj">
+      <Project>{1421d70d-7566-4686-b088-73b0bdde9da6}</Project>
+      <Name>RaceTrackService</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
