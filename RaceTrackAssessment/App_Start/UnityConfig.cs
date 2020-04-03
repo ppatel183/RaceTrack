@@ -1,6 +1,7 @@
 
-using RaceTrackService.Service;
-using RaceTrackService.ServiceImpl;
+
+
+using RaceTrackService;
 using System.Web.Mvc;
 using Unity;
 using Unity.Mvc5;
@@ -11,14 +12,11 @@ namespace RaceTrackAssessment
     {
         public static void RegisterComponents()
         {
-			var container = new UnityContainer();
-
-            // register all your components with the container here
-            // it is NOT necessary to register your controllers
-
-            // e.g. container.RegisterType<ITestService, TestService>();
-            container.RegisterType<ICar, CarServiceImpl>();
-            container.RegisterType<IOnTrackCar, OnTrackCarServiceImpl>();
+			IUnityContainer container = new UnityContainer();
+            //receives the registered services
+            container = ServiceConfiguration.AddServices(container);
+          
+           
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }

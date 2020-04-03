@@ -24,6 +24,16 @@ namespace RaceTrackDAL.Models
         public int TireWear { get; set; }
         public OnTrackCar OnTrackCar { get; set; }
 
+        
+        public Car() { }
 
+        public Car(string carName, string model, bool towStrap, double groundHeight, int tireWear)
+        {
+            CarName = carName;
+            Model = model;
+            TowStrap = towStrap;
+            GroundHeight = groundHeight;
+            TireWear = tireWear;
+        }
     }
 }

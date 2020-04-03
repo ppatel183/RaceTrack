@@ -13,7 +13,10 @@ namespace RaceTrackService.ServiceImpl
     {
         private readonly RaceTrackDbContext trackDbContext;
 
-        public CarServiceImpl(RaceTrackDbContext dbContext) { trackDbContext = dbContext; }
+        public CarServiceImpl(RaceTrackDbContext dbContext) 
+        { 
+            trackDbContext = dbContext; 
+        }
 
         public Car GetCar(int id)
         {

@@ -8,13 +8,22 @@ namespace RaceTrackAssessment.ViewModels
 {
     public class RaceTrackCarViewModel
     {
-    
-        public List<Car> RaceTrackCars { get; set; }
+   
+        public int CarId { get; set; }
+        public string CarName { get; set; }
+        public string Model { get; set; }
+        public bool TowStrap { get; set; }
+        public double GroundHeight { get; set; }
+        public int TireWear { get; set; }
 
-        public RaceTrackCarViewModel(List<Car> raceTrackCars)
+        public RaceTrackCarViewModel(int carId, string carName, string model, bool towStrap, double groundHeight, int tireWear)
         {
-            RaceTrackCars = raceTrackCars;
+            CarId = carId;
+            CarName = carName;
+            Model = model;
+            TowStrap = towStrap;
+            GroundHeight = groundHeight;
+            TireWear = tireWear;
         }
-
     }
 }
